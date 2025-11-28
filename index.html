@@ -1,0 +1,62 @@
+<!-- index.html: Simple Responsive E‑commerce Home Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple E‑Commerce | Home</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background: #222; color: #fff; padding: 15px; text-align: center; }
+    nav { display: flex; justify-content: center; gap: 20px; padding: 10px; background: #f2f2f2; }
+    nav a { text-decoration: none; color: #333; font-weight: bold; }
+    .hero { background: #e8e8e8; padding: 60px 20px; text-align: center; }
+    .products { display: grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); gap: 20px; padding: 20px; }
+    .card { padding: 15px; border: 1px solid #ddd; border-radius: 8px; text-align: center; }
+    .card img { width: 100%; height: 150px; object-fit: cover; border-radius: 6px; }
+    footer { background: #222; color: #fff; text-align: center; padding: 15px; margin-top: 30px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MyShop</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="payment.html">Payment</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Welcome to MyShop</h2>
+    <p>Your one‑stop store for quality products.</p>
+  </section>
+
+  <section class="products">
+    <div class="card">
+      <img src="https://via.placeholder.com/200" />
+      <h3>Product 1</h3>
+      <p>₹499</p>
+      <a href="products.html">View</a>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/200" />
+      <h3>Product 2</h3>
+      <p>₹799</p>
+      <a href="products.html">View</a>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/200" />
+      <h3>Product 3</h3>
+      <p>₹999</p>
+      <a href="products.html">View</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 MyShop. All rights reserved.</p>
+  </footer>
+</body>
+</html>
