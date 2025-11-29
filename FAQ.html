@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f7f7f7; }
+    .container { max-width: 700px; margin: 40px auto; padding: 20px; }
+    h1 { text-align: center; color: #222; margin-bottom: 30px; }
+    .faq-item { background: #fff; margin-bottom: 10px; padding: 15px 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); cursor: pointer; }
+    .faq-question { font-weight: bold; font-size: 16px; color: #333; display: flex; justify-content: space-between; align-items: center; }
+    .faq-answer { max-height: 0; overflow: hidden; color: #555; transition: max-height 0.4s ease; padding-top: 0; }
+    .faq-item.active .faq-answer { max-height: 300px; padding-top: 10px; }
+    .faq-item span { font-size: 20px; transition: transform 0.3s; }
+    .faq-item.active span { transform: rotate(45deg); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-item">
+      <div class="faq-question">What is your return policy? <span>+</span></div>
+      <div class="faq-answer"><p>We offer a 7-day return policy for all unused and undamaged products.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How long does shipping take? <span>+</span></div>
+      <div class="faq-answer"><p>Shipping typically takes 3-5 business days depending on your location.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Do you offer customer support? <span>+</span></div>
+      <div class="faq-answer"><p>Yes, our support team is available 24/7 to assist you with any issues.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Can I track my order? <span>+</span></div>
+      <div class="faq-answer"><p>Yes, once shipped, you will receive a tracking link via email.</p></div>
+    </div>
+  </div>
+
+  <script>
+    const items = document.querySelectorAll(".faq-item");
+    items.forEach(item => {
+      item.addEventListener("click", () => { item.classList.toggle("active"); });
+    });
+  </script>
+
+</body>
+</html>
